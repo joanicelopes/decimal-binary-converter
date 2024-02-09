@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #191919;
+}
+
+.container {
+    background-color: #191919;
+    width: 100%;
+    max-width: 500px;
+    padding: 3em 3em;
+    border: #141414 solid 1px;
+    border-radius: 0.2em;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.3em;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    gap: 1.5em;
+}
+
+.wrapper .input-wrapper input {
+    max-width: 200px;
+    height: 50px;
+    outline: none;
+    border-radius: 0.2em;
+    border: #141414 solid 1px;
+    background-color: #191919;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.input-wrapper {
+    margin: 1em;
+}
+
+input:focus {
+    border: #e5202b solid 1px;
+    color: #e5202b;
+}
+
+#error-msg {
+    text-align: center;
+    margin-top: 1.25em;
+    color: #e5202b;
+}
+
+/* Remove spinners for input type number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
