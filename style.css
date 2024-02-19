@@ -7,9 +7,16 @@
 body {
     min-height: 100vh;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: #191919;
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        flex-direction: column;
+    }
 }
 
 .container {
